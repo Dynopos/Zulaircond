@@ -1,6 +1,10 @@
+---
+layout: null
+permalink: /llms.txt
+---
 # Zul Air Cond & Electrical
 
-> Zul Air Cond & Electrical ialah perniagaan servis aircond dan elektrik berdaftar SSM (201003071840 (KT0274004-T)) sejak 2010, beribu pejabat di Kota Bharu, Kelantan dengan cawangan di Bachok, dan melayani seluruh negeri Kelantan serta Besut, Terengganu. Servis: cuci, pasang dan baiki aircond (dinding & cassette), pendawaian rumah dan kedai, DB board, lampu, soket, earthing dan pendawaian projek binaan. Lebih 2,400 pelanggan telah mempercayai kami, dengan khidmat selepas jualan yang memuaskan. Hubungi melalui WhatsApp 017-380 5112.
+> Zul Air Cond & Electrical menyediakan servis aircond Kelantan dan baiki aircond Kelantan. Ia ialah perniagaan servis aircond dan elektrik berdaftar SSM (201003071840 (KT0274004-T)) sejak 2010, beribu pejabat di Kota Bharu, Kelantan dengan cawangan di Bachok, dan melayani seluruh negeri Kelantan serta Besut, Terengganu. Servis: cuci, pasang dan baiki aircond (dinding & cassette), pendawaian rumah dan kedai, DB board, lampu, soket, earthing dan pendawaian projek binaan. Lebih 2,400 pelanggan telah mempercayai kami, dengan khidmat selepas jualan yang memuaskan. Hubungi melalui WhatsApp 017-380 5112.
 
 ## Fakta ringkas
 - Nama: Zul Air Cond & Electrical
@@ -34,8 +38,10 @@
   Kami melayani seluruh negeri Kelantan (Kota Bharu, Bachok, Pasir Mas, Tumpat, Pasir Puteh, Tanah Merah, Machang, Kuala Krai, Jeli dan Gua Musang) serta kawasan Besut, Terengganu. Premis kami di Kota Bharu dan Bachok.
 - Adakah Zul Air Cond & Electrical datang ke Besut, Terengganu?
   Ya. Selain seluruh Kelantan, kami juga melayani kawasan Besut, Terengganu. WhatsApp lokasi anda untuk sebut harga dan tarikh.
-- Berapa harga servis aircond?
+- Berapa harga servis aircond di Kelantan?
   Harga bergantung pada jenis unit (dinding atau cassette), kuasa (HP), bilangan unit dan keadaan aircond. WhatsApp 017-380 5112 dengan jenis dan bilangan unit untuk dapatkan sebut harga.
+- Di mana nak baiki aircond di Kelantan?
+  Zul Air Cond & Electrical menyediakan servis baiki aircond di seluruh Kelantan dan Besut, Terengganu. WhatsApp 017-380 5112 dengan gambar unit dan masalahnya. Kami periksa punca dahulu dan beri sebut harga sebelum kerja dimulakan.
 - Berapa kerap aircond perlu diservis?
   Secara umum, aircond rumah elok dicuci setiap 3 hingga 6 bulan, dan lebih kerap jika digunakan setiap hari atau di kawasan berhabuk. Penapis (filter) boleh dibersihkan sendiri setiap 2 hingga 4 minggu.
 - Apakah tanda aircond perlu diservis?
@@ -55,4 +61,9 @@
 
 ## Pautan
 - Laman utama: https://zulaircond.my/
+- Blog: https://zulaircond.my/blog/
 - WhatsApp: https://wa.me/60173805112?text=Salam%20Zul%20Air%20Cond%20%26%20Electrical%2C%20saya%20nak%20tanya%20tentang%20servis%20aircond%20/%20elektrik.
+{% if site.posts.size > 0 %}
+## Artikel blog
+{% for post in site.posts %}- [{{ post.title }}]({{ site.url }}{{ post.url }}): {{ post.description }}
+{% endfor %}{% endif %}

@@ -669,3 +669,72 @@ em{font-style:normal}
   .tile--loc .arrow{font-size:18px}
 }
 @media (min-width:1024px){.tile--loc .ico--xl{display:none}}
+
+/* =========================================================
+   BLOG (Jekyll): senarai, kad & halaman artikel
+   ========================================================= */
+.halaman-blog .menu a[href="/blog/"]{color:var(--gold-hi)}
+.crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:0 0 16px;font-size:12.5px;color:var(--muted)}
+.crumbs a{color:var(--silver)}
+.crumbs a:hover{color:var(--gold-hi)}
+.crumbs [aria-current]{color:var(--silver-hi);overflow-wrap:anywhere}
+.blog-hero{padding-top:34px}
+.blog-hero h1,.post__head h1{font-size:clamp(34px,6.5vw,60px);margin:14px 0 6px}
+.head .btn{flex:none}
+
+.posts{display:grid;gap:14px;grid-template-columns:minmax(0,1fr)}
+.post-card{display:flex;flex-direction:column;overflow:hidden;border-radius:var(--r-lg);border:1px solid var(--line);background:var(--g-card);box-shadow:var(--shadow);transition:transform .45s var(--ease),border-color .35s}
+.post-card:hover{transform:translateY(-5px);border-color:var(--line-gold)}
+.post-card__img{display:block;aspect-ratio:16/9;overflow:hidden;background:var(--navy-800)}
+.post-card__img img{width:100%;height:100%;object-fit:cover;object-position:50% 35%;transition:transform 1s var(--ease)}
+.post-card:hover .post-card__img img{transform:scale(1.06)}
+.post-card__body{display:flex;flex-direction:column;gap:8px;flex:1;padding:18px}
+.post-card h3{font-size:21px;line-height:1.15;letter-spacing:-.015em}
+.post-card h3 a:hover{color:var(--gold-hi)}
+.post-card p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.55}
+.post-card__more{margin-top:auto;padding-top:6px;font-weight:800;font-size:13px;color:var(--gold-hi)}
+.post-card__more:hover{text-decoration:underline}
+@media (min-width:700px){.posts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1024px){.posts{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+.post{padding-top:28px}
+.post__head{max-width:860px}
+.post__lead{margin:10px 0 0;color:var(--silver);font-size:17px;line-height:1.6}
+.post__meta{margin:12px 0 0;color:var(--muted);font-size:13px}
+.post__cover{margin:24px 0 0;border-radius:var(--r-xl);overflow:hidden;border:1px solid var(--line-gold);aspect-ratio:16/8;background:var(--navy-800)}
+.post__cover img{width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+.post__grid{display:grid;gap:22px;grid-template-columns:minmax(0,1fr);margin-top:28px}
+@media (min-width:1024px){
+  .post__grid{grid-template-columns:minmax(0,1fr) 320px;gap:40px;align-items:start}
+  .post__side{position:sticky;top:calc(var(--nav-h) + 20px)}
+}
+
+/* Teks artikel: mudah dibaca */
+.prose{max-width:720px;font-size:16.5px;line-height:1.8;color:#dbe4ee}
+.prose > :first-child{margin-top:0}
+.prose h2{font-size:clamp(24px,3.6vw,30px);margin:38px 0 12px;line-height:1.15}
+.prose h3{font-size:21px;margin:28px 0 10px}
+.prose p{margin:0 0 16px}
+.prose strong{color:var(--silver-hi)}
+.prose a{color:var(--gold-hi);text-decoration:underline;text-underline-offset:3px}
+.prose ul,.prose ol{margin:0 0 18px;padding-left:22px}
+.prose li{margin:6px 0}
+.prose li::marker{color:var(--gold)}
+.prose img{width:100%;height:auto;border-radius:var(--r-md);border:1px solid var(--line);margin:8px 0 18px}
+.prose blockquote{margin:0 0 18px;padding:14px 18px;border-left:3px solid var(--gold);background:rgba(212,173,95,.08);border-radius:0 var(--r-sm) var(--r-sm) 0}
+.prose table{width:100%;border-collapse:collapse;margin:6px 0 22px;font-size:14.5px;display:block;overflow-x:auto}
+.prose th,.prose td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}
+.prose th{background:rgba(212,173,95,.12);color:var(--gold-hi);font-weight:700}
+.prose tr:nth-child(even) td{background:rgba(5,16,32,.35)}
+
+.post-cta,.side-card{display:flex;flex-direction:column;gap:10px;align-items:flex-start;padding:22px;border-radius:var(--r-lg);border:1px solid var(--line-gold);background:radial-gradient(ellipse at 100% 0%,rgba(143,220,255,.14),transparent 55%),linear-gradient(140deg,#10294a,#071a33)}
+.post-cta{margin-top:30px}
+.post-cta strong,.side-card strong{font:800 20px/1.2 var(--f-head);color:var(--text)}
+.post-cta p,.side-card p{margin:0;color:var(--silver);font-size:14px;line-height:1.55}
+.post-cta a.btn{text-decoration:none;color:#1a1408}
+.side-card .btn{width:100%}
+.side-card__link{font-size:13px;font-weight:800;color:var(--gold-hi)}
+.side-card__link:hover{text-decoration:underline}
+.post__cover{max-height:440px}
+@media (min-width:1024px){.post__cover{aspect-ratio:21/9}}
+.post__cover{width:100%;aspect-ratio:auto;max-height:none;height:clamp(220px,34vw,440px)}

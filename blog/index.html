@@ -1,0 +1,42 @@
+---
+layout: asas
+title: "Blog Servis Aircond Kelantan & Baiki Aircond"
+seo_title: "Blog Servis Aircond Kelantan & Baiki Aircond | Zul Air Cond & Electrical"
+description: "Tips servis aircond Kelantan, baiki aircond dan keselamatan elektrik untuk rumah dan premis, daripada Zul Air Cond & Electrical."
+permalink: /blog/
+---
+<section class="blog-hero wrap">
+  <nav class="crumbs" aria-label="Laluan halaman"><a href="/">Utama</a><span aria-hidden="true">›</span><span aria-current="page">Blog</span></nav>
+  <span class="eyebrow"><span class="dot"></span>Blog &amp; Tips</span>
+  <h1>Blog Servis Aircond Kelantan <em>&amp; Baiki Aircond</em></h1>
+  <p class="sub">Panduan ringkas tentang penjagaan aircond, tanda aircond perlu dibaiki dan keselamatan elektrik untuk rumah, kedai dan pejabat di Kelantan &amp; Besut.</p>
+</section>
+
+<section class="section wrap" aria-label="Senarai artikel" style="padding-top:28px">
+  {%- if site.posts.size > 0 %}
+  <div class="posts">{% for post in site.posts %}{% include kad-artikel.html post=post %}{% endfor %}</div>
+  {%- else %}
+  <p class="sub">Artikel akan diterbitkan tidak lama lagi.</p>
+  {%- endif %}
+</section>
+
+<section class="wrap">
+  <div class="cta reveal">
+    <div><span class="eyebrow">Dipercayai lebih 2,400 pelanggan</span><h2>Aircond bermasalah? <em>WhatsApp kami sekarang.</em></h2><p>Seluruh Kelantan &amp; Besut, Terengganu · 017-380 5112</p></div>
+    <a class="btn btn--gold btn--lg" href="https://wa.me/60173805112" target="_blank" rel="noopener" data-wa="blog-cta"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> WhatsApp Sebut Harga</a>
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type": "Blog", "@id": "https://zulaircond.my/blog/#blog", "name": "Blog Servis Aircond Kelantan & Baiki Aircond", "url": "https://zulaircond.my/blog/", "inLanguage": "ms-MY",
+     "publisher": {"@id": "https://zulaircond.my/#perniagaan"},
+     "blogPost": [{% for post in site.posts %}{"@type": "BlogPosting", "headline": {{ post.title | jsonify }}, "url": {{ site.url | append: post.url | jsonify }}, "datePublished": {{ post.date | date_to_xmlschema | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}]},
+    {"@type": "BreadcrumbList", "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Utama", "item": "https://zulaircond.my/"},
+      {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://zulaircond.my/blog/"}]}
+  ]
+}
+</script>

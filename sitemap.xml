@@ -1,8 +1,12 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://zulaircond.my/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image><image:loc>https://zulaircond.my/assets/img/pasang-outdoor-1080.webp</image:loc><image:title>Pasang unit luar aircond di rumah kediaman</image:title></image:image>
@@ -16,4 +20,16 @@
     <image:image><image:loc>https://zulaircond.my/assets/img/soket-dinding-1080.webp</image:loc><image:title>Pasang kotak soket &amp; suis dinding</image:title></image:image>
     <image:image><image:loc>https://zulaircond.my/assets/img/conduit-siling-1080.webp</image:loc><image:title>Pendawaian conduit di siling</image:title></image:image>
   </url>
-</urlset>
+  <url>
+    <loc>https://zulaircond.my/blog/</loc>
+    <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+{% for post in site.posts %}  <url>
+    <loc>https://zulaircond.my{{ post.url }}</loc>
+    <lastmod>{{ post.last_modified_at | default: post.date | date: '%Y-%m-%d' }}</lastmod>
+    <priority>0.7</priority>{% if post.image %}
+    <image:image><image:loc>https://zulaircond.my{{ post.image }}</image:loc><image:title>{{ post.title | xml_escape }}</image:title></image:image>{% endif %}
+  </url>
+{% endfor %}</urlset>

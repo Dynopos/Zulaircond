@@ -1,0 +1,34 @@
+# Konfigurasi Jekyll (GitHub Pages membina laman ini secara automatik setiap kali ada push)
+title: Zul Air Cond & Electrical
+url: https://zulaircond.my
+baseurl: ""
+lang: ms-MY
+timezone: Asia/Kuala_Lumpur
+
+# Alamat artikel: https://zulaircond.my/blog/<nama-fail-tanpa-tarikh>/
+permalink: /blog/:title/
+# Terbitkan artikel walaupun tarikhnya kelihatan "masa depan" bagi pelayan
+future: true
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+
+# Fail yang tidak diterbitkan
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .claude
+
+# Semua artikel dalam _posts guna layout "artikel"
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: artikel
+      kategori: Tips Aircond

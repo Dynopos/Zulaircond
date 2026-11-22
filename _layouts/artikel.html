@@ -1,0 +1,77 @@
+---
+layout: asas
+---
+{%- assign mins = content | number_of_words | divided_by: 180 | plus: 1 -%}
+<article class="post wrap" itemscope itemtype="https://schema.org/BlogPosting">
+  <nav class="crumbs" aria-label="Laluan halaman"><a href="/">Utama</a><span aria-hidden="true">›</span><a href="/blog/">Blog</a><span aria-hidden="true">›</span><span aria-current="page">{{ page.title }}</span></nav>
+
+  <header class="post__head">
+    <span class="eyebrow"><span class="dot"></span>{{ page.kategori | default: "Tips" }}</span>
+    <h1 itemprop="headline">{{ page.title }}</h1>
+    <p class="post__lead" itemprop="description">{{ page.description }}</p>
+    <p class="post__meta">{% include tarikh.html d=page.date %} · {{ mins }} min bacaan · Zul Air Cond &amp; Electrical</p>
+  </header>
+
+  {%- if page.image %}
+  <figure class="post__cover"><img src="{{ page.image }}" alt="{{ page.image_alt | default: page.title | escape }}" fetchpriority="high" itemprop="image"></figure>
+  {%- endif %}
+
+  <div class="post__grid">
+    <div class="prose" itemprop="articleBody">
+      {{ content }}
+      <div class="post-cta">
+        <strong>Perlukan servis aircond atau baiki aircond di Kelantan?</strong>
+        <p>Zul Air Cond &amp; Electrical melayani seluruh Kelantan &amp; Besut, Terengganu. Hantar lokasi, jenis unit atau gambar masalah, dan kami beri sebut harga.</p>
+        <a class="btn btn--gold" href="https://wa.me/60173805112" target="_blank" rel="noopener" data-wa="artikel-akhir"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> WhatsApp 017-380 5112</a>
+      </div>
+    </div>
+    <aside class="post__side" aria-label="Hubungi kami">
+      <div class="side-card">
+        <span class="eyebrow">Zul Air Cond &amp; Electrical</span>
+        <strong>Servis &amp; baiki aircond Kelantan</strong>
+        <p>Seluruh Kelantan &amp; Besut. Lebih 2,400 pelanggan, berdaftar SSM sejak 2010.</p>
+        <a class="btn btn--gold" href="https://wa.me/60173805112" target="_blank" rel="noopener" data-wa="artikel-sisi"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> WhatsApp Sebut Harga</a>
+        <a class="btn btn--tel" href="tel:+60173805112"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg> 017-380 5112</a>
+        <a class="side-card__link" href="/#servis">Lihat semua servis →</a>
+      </div>
+    </aside>
+  </div>
+
+  {%- assign lain = site.posts | where_exp: "p", "p.url != page.url" %}
+  {%- if lain.size > 0 %}
+  <section class="section" aria-labelledby="lain-h">
+    <div class="head"><div><span class="eyebrow">Baca juga</span><h2 id="lain-h">Artikel Lain</h2></div><a class="btn btn--ghost" href="/blog/">Semua Artikel →</a></div>
+    <div class="posts">{% for post in lain limit:3 %}{% include kad-artikel.html post=post %}{% endfor %}</div>
+  </section>
+  {%- endif %}
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": {{ site.url | append: page.url | append: "#artikel" | jsonify }},
+      "headline": {{ page.title | jsonify }},
+      "description": {{ page.description | jsonify }},
+      "image": {{ site.url | append: page.image | jsonify }},
+      "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+      "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
+      "inLanguage": "ms-MY",
+      "mainEntityOfPage": {{ site.url | append: page.url | jsonify }},
+      "keywords": {{ page.keywords | jsonify }},
+      "author": {"@type": "Organization", "name": "Zul Air Cond & Electrical", "url": "https://zulaircond.my/"},
+      "publisher": {"@id": "https://zulaircond.my/#perniagaan", "@type": ["HVACBusiness", "Electrician"], "name": "Zul Air Cond & Electrical", "logo": {"@type": "ImageObject", "url": "https://zulaircond.my/icon-512.png"}}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Utama", "item": "https://zulaircond.my/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://zulaircond.my/blog/"},
+        {"@type": "ListItem", "position": 3, "name": {{ page.title | jsonify }}, "item": {{ site.url | append: page.url | jsonify }}}
+      ]
+    }
+  ]
+}
+</script>

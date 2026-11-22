@@ -1,0 +1,11 @@
+<article class="post-card reveal">
+  <a class="post-card__img" href="{{ include.post.url }}" tabindex="-1" aria-hidden="true">
+    {%- if include.post.image %}<img src="{{ include.post.image }}" alt="" loading="lazy">{% endif -%}
+  </a>
+  <div class="post-card__body">
+    <span class="tag">{{ include.post.kategori | default: "Tips" }} · {% include tarikh.html d=include.post.date %}</span>
+    <h3><a href="{{ include.post.url }}">{{ include.post.title }}</a></h3>
+    <p>{{ include.post.description }}</p>
+    <a class="post-card__more" href="{{ include.post.url }}">Baca artikel <span aria-hidden="true">→</span></a>
+  </div>
+</article>
