@@ -1,6 +1,6 @@
 <article class="post-card reveal">
   <a class="post-card__img" href="{{ include.post.url }}" tabindex="-1" aria-hidden="true">
-    {%- if include.post.image %}<img src="{{ include.post.image }}" alt="" loading="lazy">{% endif -%}
+    {%- if include.post.image %}<img src="{{ include.post.image }}" alt=""{% if include.segera %} fetchpriority="high"{% else %} loading="lazy"{% endif %}>{% endif -%}
   </a>
   <div class="post-card__body">
     <span class="tag">{{ include.post.kategori | default: "Tips" }} · {% include tarikh.html d=include.post.date %}</span>

@@ -1,7 +1,7 @@
 ---
 layout: asas
 title: "Blog Servis Aircond Kelantan & Baiki Aircond"
-seo_title: "Blog Servis Aircond Kelantan & Baiki Aircond | Zul Air Cond & Electrical"
+seo_title: "Blog Servis Aircond Kelantan & Baiki Aircond | Zul Aircond"
 description: "Tips servis aircond Kelantan, baiki aircond dan keselamatan elektrik untuk rumah dan premis, daripada Zul Air Cond & Electrical."
 permalink: /blog/
 ---
@@ -14,7 +14,8 @@ permalink: /blog/
 
 <section class="section wrap" aria-label="Senarai artikel" style="padding-top:28px">
   {%- if site.posts.size > 0 %}
-  <div class="posts">{% for post in site.posts %}{% include kad-artikel.html post=post %}{% endfor %}</div>
+  <h2 class="sr-only">Semua artikel</h2>
+  <div class="posts">{% for post in site.posts %}{% if forloop.first %}{% include kad-artikel.html post=post segera=true %}{% else %}{% include kad-artikel.html post=post %}{% endif %}{% endfor %}</div>
   {%- else %}
   <p class="sub">Artikel akan diterbitkan tidak lama lagi.</p>
   {%- endif %}

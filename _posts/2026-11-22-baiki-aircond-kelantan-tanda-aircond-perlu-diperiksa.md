@@ -1,8 +1,9 @@
 ---
 title: "Baiki Aircond Kelantan: 7 Tanda Aircond Anda Perlu Diperiksa"
 seo_title: "Baiki Aircond Kelantan: 7 Tanda Aircond Rosak | Zul Aircond"
-description: "Aircond tak sejuk, menitis air atau bising? Kenali 7 tanda aircond perlu dibaiki, semakan mudah yang boleh dibuat sendiri, dan bila perlu panggil juruteknik di Kelantan."
+description: "Aircond tak sejuk, menitis air atau bising? Kenali 7 tanda aircond perlu dibaiki dan semakan mudah sebelum panggil juruteknik di Kelantan."
 image: /assets/img/servis-indoor-1080.webp
+og_image: /assets/img/og/baiki-aircond-kelantan-tanda-aircond-perlu-diperiksa.jpg
 image_alt: "Juruteknik Zul Air Cond & Electrical membuka unit dalam aircond untuk diperiksa"
 keywords: "baiki aircond Kelantan, aircond tak sejuk, aircond menitis air, repair aircond Kota Bharu"
 kategori: Baiki Aircond

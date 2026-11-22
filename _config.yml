@@ -23,6 +23,7 @@ exclude:
   - node_modules
   - vendor
   - .claude
+  - tools
 
 # Semua artikel dalam _posts guna layout "artikel"
 defaults:

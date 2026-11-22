@@ -62,6 +62,8 @@ permalink: /llms.txt
 ## Pautan
 - Laman utama: https://zulaircond.my/
 - Blog: https://zulaircond.my/blog/
+- Suapan blog (Atom): https://zulaircond.my/feed.xml
+- Sitemap: https://zulaircond.my/sitemap.xml
 - WhatsApp: https://wa.me/60173805112?text=Salam%20Zul%20Air%20Cond%20%26%20Electrical%2C%20saya%20nak%20tanya%20tentang%20servis%20aircond%20/%20elektrik.
 {% if site.posts.size > 0 %}
 ## Artikel blog

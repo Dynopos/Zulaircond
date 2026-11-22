@@ -738,3 +738,6 @@ em{font-style:normal}
 .post__cover{max-height:440px}
 @media (min-width:1024px){.post__cover{aspect-ratio:21/9}}
 .post__cover{width:100%;aspect-ratio:auto;max-height:none;height:clamp(220px,34vw,440px)}
+
+/* Tersembunyi secara visual, kekal untuk pembaca skrin & SEO */
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}

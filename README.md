@@ -80,6 +80,21 @@ Tips SEO: satu keyword utama setiap artikel (letak dalam title, perenggan pertam
 
 Netlify juga boleh digunakan (lihat skill). Netlify wajib jika kelak mahu bayaran online.
 
+## Google index (Search Console)
+1. Buka https://search.google.com/search-console → **Add property**.
+2. Pilih **Domain** → taip `zulaircond.my` → salin rekod **TXT** yang diberi.
+3. Di panel DNS domain (mschosting), tambah rekod **TXT** untuk `@` dengan nilai itu → kembali ke Search Console → **Verify** (DNS boleh ambil masa beberapa minit hingga beberapa jam).
+   - Alternatif: pilih **URL prefix** `https://zulaircond.my/` → kaedah **HTML tag** → hantar kod `google-site-verification` kepada pembangun untuk diletak dalam `<head>`.
+4. **Sitemaps** → masukkan `sitemap.xml` → **Submit**.
+5. **URL Inspection** → tampal setiap URL penting → **Request indexing**:
+   laman utama, `/blog/` dan setiap artikel.
+6. Setiap kali artikel baharu diterbitkan: URL Inspection → Request indexing untuk URL artikel itu.
+
+## Bing & IndexNow (untuk Bing, ChatGPT Search, Copilot)
+- Bing Webmaster Tools → **Import from Google Search Console** (paling mudah selepas langkah di atas).
+- IndexNow: fail kunci `39c73d0407490059a490e3a7e3e0b48b.txt` ada di akar laman. Untuk maklumkan URL baharu kepada Bing serta-merta, buka:
+  `https://api.indexnow.org/indexnow?url=<URL-penuh>&key=39c73d0407490059a490e3a7e3e0b48b`
+
 ## Selepas terbit
 - Daftar di **Google Search Console** dan hantar `sitemap.xml`.
 - Daftar di **Bing Webmaster Tools** (digunakan ChatGPT/Copilot).

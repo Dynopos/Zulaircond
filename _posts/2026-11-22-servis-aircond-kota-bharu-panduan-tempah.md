@@ -1,9 +1,10 @@
 ---
 title: "Servis Aircond Kota Bharu: Panduan Tempah Servis & Jaga Aircond Sepanjang Tahun"
 seo_title: "Servis Aircond Kota Bharu: Panduan Tempah | Zul Aircond"
-description: "Panduan servis aircond di Kota Bharu, Kelantan: kenapa aircond di Kota Bharu cepat kotor, bila waktu terbaik servis, langkah selepas banjir, dan cara tempah servis."
+description: "Panduan servis aircond Kota Bharu: kenapa aircond cepat kotor, bila waktu terbaik servis, langkah selepas banjir dan cara tempah servis."
 date: 2026-11-22 10:10:00 +0800
 image: /assets/img/servis-outdoor-panasonic-1080.webp
+og_image: /assets/img/og/servis-aircond-kota-bharu-panduan-tempah.jpg
 image_alt: "Juruteknik Zul Air Cond & Electrical mencuci kipas unit luar aircond"
 keywords: "servis aircond Kota Bharu, cuci aircond Kota Bharu, servis aircond Kelantan, repair aircond Kota Bharu"
 kategori: Servis Aircond

@@ -1,9 +1,10 @@
 ---
 title: "Pasang Aircond Kelantan: 6 Perkara Perlu Tahu Sebelum Pasang Aircond Baru"
 seo_title: "Pasang Aircond Kelantan: 6 Perkara Perlu Tahu | Zul Aircond"
-description: "Nak pasang aircond baru di Kelantan? Panduan memilih kuasa HP ikut saiz bilik, inverter atau bukan, lokasi unit, piping dan pendawaian, serta maklumat untuk sebut harga."
+description: "Nak pasang aircond baru di Kelantan? Panduan pilih HP ikut saiz bilik, inverter, lokasi unit, piping, pendawaian dan maklumat untuk sebut harga."
 date: 2026-11-22 10:00:00 +0800
 image: /assets/img/pasang-piping-1080.webp
+og_image: /assets/img/og/pasang-aircond-kelantan-panduan-sebelum-pasang.jpg
 image_alt: "Juruteknik Zul Air Cond & Electrical memasang bracket dan piping aircond dalam dinding"
 keywords: "pasang aircond Kelantan, pasang aircond baru, pasang aircond Kota Bharu, aircond berapa HP"
 kategori: Pasang Aircond

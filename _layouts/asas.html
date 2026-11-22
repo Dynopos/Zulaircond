@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 {%- if page.seo_title %}{% assign tajuk = page.seo_title %}{% else %}{% capture tajuk %}{{ page.title }} | Zul Air Cond & Electrical{% endcapture %}{% endif %}
-{%- assign gambar = page.image | default: "/og-image.jpg" %}
+{%- assign gambar = page.og_image | default: "/og-image.jpg" %}
 {%- assign ver = site.time | date: "%Y%m%d%H%M" %}
 <title>{{ tajuk | escape }}</title>
 <meta name="description" content="{{ page.description | escape }}">
@@ -21,10 +21,17 @@
 <meta property="og:description" content="{{ page.description | escape }}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:image" content="{{ site.url }}{{ gambar }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ page.image_alt | default: page.title | escape }}">
 {%- if page.layout == 'artikel' %}
 <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
 {%- endif %}
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.title | escape }}">
+<meta name="twitter:description" content="{{ page.description | escape }}">
+<meta name="twitter:image" content="{{ site.url }}{{ gambar }}">
+<link rel="alternate" type="application/atom+xml" title="Blog Zul Air Cond &amp; Electrical" href="/feed.xml">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">

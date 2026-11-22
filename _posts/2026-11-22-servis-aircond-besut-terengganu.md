@@ -4,6 +4,7 @@ seo_title: "Servis Aircond Besut, Terengganu: Panduan Lengkap | Zul Aircond"
 description: "Panduan servis aircond Besut, Terengganu: kesan udara laut pada unit luar, kekerapan servis di kawasan pantai, dan cara tempah dari Jerteh hingga Kuala Besut."
 date: 2026-11-22 10:20:00 +0800
 image: /assets/img/pasang-outdoor-1080.webp
+og_image: /assets/img/og/servis-aircond-besut-terengganu.jpg
 image_alt: "Juruteknik Zul Air Cond & Electrical memasang unit luar aircond di dinding rumah"
 keywords: "servis aircond Besut, aircond Besut, baiki aircond Besut, servis aircond Jerteh, aircond Kuala Besut"
 kategori: Servis Aircond
