@@ -42,6 +42,7 @@ robots.txt, sitemap.xml & llms.txt (artikel baharu disenaraikan automatik), 404.
    ```markdown
    ---
    title: "Pasang Aircond Baru di Kelantan: Perkara Perlu Tahu"
+   seo_title: "Tajuk pendek ≤ 65 aksara untuk Google | Zul Aircond"   # pilihan
    description: "Ringkasan 1–2 ayat (kira-kira 150 aksara) yang muncul di Google."
    image: /assets/img/pasang-piping-1080.webp
    image_alt: "Penerangan gambar"
