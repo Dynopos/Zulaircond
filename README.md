@@ -11,8 +11,8 @@ Laman statik (HTML + CSS + JS), tanpa pelayan atau pangkalan data. Dibina dengan
 4. **Bila perlu servis**: 6 tanda aircond/elektrik bermasalah
 5. **Hasil Kerja Sebenar**: galeri 18 gambar dengan paparan penuh (lightbox)
 6. **Tentang + Fakta Ringkas** (untuk Google & enjin AI), termasuk 2,400+ pelanggan dan khidmat selepas jualan
-7. **Lokasi**: ibu pejabat Kota Bharu & cawangan Bachok, dengan pautan Google Maps & Waze, serta peta
-8. **Soalan Lazim** (11 soalan), **CTA**, footer dan butang WhatsApp terapung
+7. **Lokasi & kawasan liputan**: seluruh Kelantan (10 jajahan) & Besut, Terengganu; ibu pejabat Kota Bharu & cawangan Bachok, dengan pautan Google Maps & Waze, serta peta
+8. **Soalan Lazim** (12 soalan), **CTA**, footer dan butang WhatsApp terapung
 
 ## Struktur fail
 ```
@@ -47,3 +47,8 @@ Netlify juga boleh digunakan (lihat skill). Netlify wajib jika kelak mahu bayara
 - Daftar di **Bing Webmaster Tools** (digunakan ChatGPT/Copilot).
 - Buat / kemas kini **Google Business Profile** untuk kedua-dua premis dan letak URL laman.
 - Pastikan nama & nombor WhatsApp sama di semua media sosial.
+
+## Voice note (dalam hero)
+- Fail: `assets/audio/voice-note.ogg` (Opus) + `assets/audio/voice-note.m4a` (AAC untuk iPhone/Safari). Tempoh 28 saat (`data-duration="28"`).
+- **Auto-main:** semua pelayar menyekat bunyi sebelum pelawat menyentuh laman, dan tiada laman boleh memaksanya. Audio bermula pada sentuhan/klik **pertama** di mana-mana (skrol tidak dikira). Butang main berdenyut sementara menunggu. Jika pelawat jeda, ia tidak dimainkan semula.
+- Tukar audio: ganti kedua-dua fail (nama sama) dan kemas kini `data-duration`. Label "Dengar: Zul Air Cond & Electrical" boleh ditukar dalam `index.html` (`vn__label`).
